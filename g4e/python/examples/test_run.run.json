@@ -1,0 +1,22 @@
+{
+    "config": {
+        "beamline": "erhic",
+        "build_prefix": "/home/romanov/eic/g4e-dev/cmake-build-debug",
+        "detector": "jleic",
+        "executable": "/home/romanov/eic/g4e-dev/cmake-build-debug/g4e",
+        "g4e_home": "/home/romanov/eic/g4e-dev",
+        "is_batch": true,
+        "output": "test_run",
+        "run_context_file": "test_run.run.json",
+        "run_mac_file": "test_run.run.mac",
+        "source_file": "/home/romanov/Downloads/herwig6_20k.hepmc",
+        "thread_count": 1,
+        "work_dir": "/home/romanov/eic/g4e-dev/python/examples"
+    },
+    "user_commands": [
+        "/generator/select hepmcAscii",
+        "/generator/hepmcAscii/open /home/romanov/Downloads/herwig6_20k.hepmc",
+        "/run/initialize",
+        "/run/beamOn 2000"
+    ]
+}
