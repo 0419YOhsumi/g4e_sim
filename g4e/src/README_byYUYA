@@ -2,3 +2,7 @@ List of codes I edited in this directory.
 EICPhysicsLists.cc ( for adding FTFP_BERT )
 g4e.cc 
 g4e_original.cc ( This is the original copy )
+List of directory which contains codes I edited.
+generator/
+main_detectors/
+subdetectors/
