@@ -3,7 +3,7 @@
 
 #include "G4Event.hh"
 #include "G4ParticleGun.hh"
-#include "G4GeneralParticleSource.hh"
+#include "G4GeneralParticleSource.hh" // include GPS from Geant4
 #include "PythiaAsciiReader.hh"
 #include "HepMcAsciiGenerator.hh"
 #include "BeagleGenerator.hh"
@@ -15,7 +15,7 @@
 PrimaryGeneratorAction::PrimaryGeneratorAction(): G4VUserPrimaryGeneratorAction()
 {
     // default generator is particle gun.
-    fConeParticleGunGenerator = new ConeParticleGun();
+    fConeParticleGunGenerator = new ConeParticleGun(); 
     fParticleGunGenerator = new G4ParticleGun();
     fHepMcAsciiGenerator = new HepMcAsciiGenerator();
     fPythiaAsciiGenerator = new PythiaAsciiReader();
@@ -25,7 +25,7 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(): G4VUserPrimaryGeneratorAction(
     
     gentypeMap["coneParticleGun"] = fConeParticleGunGenerator;
     //gentypeMap["particleGun"] = fParticleGunGenerator;
-    gentypeMap["particleGun"] = GPS_gun;
+    gentypeMap["particleGun"] = GPS_gun; // I defined
     gentypeMap["hepmcAscii"] = fHepMcAsciiGenerator;
     gentypeMap["pythiaAscii"] = fPythiaAsciiGenerator;
     gentypeMap["beagle"] = fBeagleGenerator;
