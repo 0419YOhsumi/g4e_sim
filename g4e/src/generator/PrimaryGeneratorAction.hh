@@ -55,7 +55,7 @@ private:
     G4VPrimaryGenerator *fPythiaAsciiGenerator;       // Pythia 6 lund format
     G4VPrimaryGenerator *fBeagleGenerator;            // Beagle Shmeagle
 
-    G4VPrimaryGenerator *GPS_gun;
+    G4VPrimaryGenerator *GPS_gun; // GPS
     
     G4VPrimaryGenerator *currentGenerator;
     G4String currentGeneratorName;
