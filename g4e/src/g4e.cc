@@ -51,12 +51,12 @@
 #include <G4UIExecutive.hh>
 
 //-- physics processes --
-#include <FTFP_BERT.hh>
+#include <FTFP_BERT.hh> // I add
 #include <QGSP_BIC.hh>
 #include <TFile.h>
 #include <G4GeometryManager.hh>
-#include "FTFP_BERT.hh"
-#include <FTFP_INCLXX.hh>
+#include "FTFP_BERT.hh" // I add
+#include <FTFP_INCLXX.hh> // I add
 
 //-- random seed --
 #include "Randomize.hh"
@@ -120,7 +120,7 @@ int main(int argc, char **argv)
     // add FTFP_BERT
     G4VModularPhysicsList* physicslist = new FTFP_BERT; // add
     runManager->SetUserInitialization(physicslist); // add
-    runManager->SetUserInitialization(new FTFP_BERT());
+    runManager->SetUserInitialization(new FTFP_BERT()); // add
     
     // add FTFP_INCLXX
     G4VModularPhysicsList* physicslist_high = new FTFP_INCLXX; // add
@@ -140,7 +140,7 @@ int main(int argc, char **argv)
     G4VisExecutive* visManager = nullptr;
     G4UIExecutive* uiExec = nullptr;
     //std::string defaultMacro = "jleic.mac";     // No GUI default macro. Default macro is used if no other macros given
-    std::string defaultMacro = "cone_pgun_my.mac"; 
+    std::string defaultMacro = "cone_pgun_my.mac"; // I chnaged
 
     // We show GUI if user didn't provided any macros of if he has --gui/-g flag
     /*if(appArgs.ShowGui) {
