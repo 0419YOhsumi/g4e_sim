@@ -1,0 +1,4 @@
+This directory contains analysis codes I used.
+For example, gauss_200GeV.C ( .h ) 
+200 GeV neutron, pT = 0.3 GeV, 1000 events
+I analysed using this code.
