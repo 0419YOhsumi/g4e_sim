@@ -12,6 +12,7 @@
 
 #include <spdlog/fmt/ostr.h>
 
+
 PrimaryGeneratorAction::PrimaryGeneratorAction(): G4VUserPrimaryGeneratorAction()
 {
     // default generator is particle gun.
