@@ -1,0 +1,7 @@
+/src/g4e.cc
+/src/EICPhysicsList.cc
+/src/generator/PrimaryGeneratorAction.cc
+/src/generator/PrimaryGeneratorAction.hh
+/src/main_detectors/JLeicDetectorConstruction.cc
+/src/subdetectors/ffi_ZDC/
+/python/g4epy/g4e.py
