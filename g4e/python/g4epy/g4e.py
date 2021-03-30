@@ -184,7 +184,7 @@ class Geant4Eic(object):
         #self.commands.append(f"/gps/ang/maxphi 3.37559 rad")
         
         self.commands.append(f"/run/initialize")
-        self.commands.append(f"/run/beamOn 10") 
+        self.commands.append(f"/run/beamOn 100") 
         #self.commands.append('/vis/open OGLIQt')
         #self.commands.extend(self.user_commands)
         
