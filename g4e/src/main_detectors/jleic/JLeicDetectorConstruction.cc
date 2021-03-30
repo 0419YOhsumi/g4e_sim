@@ -571,8 +571,8 @@ void JLeicDetectorConstruction::SetUpJLEIC2019()
 
         ffi_ZDC.Construct(fConfig.ffi_ZDC, World_Material, World_Phys);
         ffi_ZDC.ConstructTowels();
-        if (ffi_ZDC.Logic) ffi_ZDC.Logic->SetSensitiveDetector(fCalorimeterSD);
-                           ffi_ZDC.ffi_ZDC_HCAL_Logic->SetSensitiveDetector(fCalorimeterSD);
+        if (ffi_ZDC.Logic) ffi_ZDC.Logic->SetSensitiveDetector(fCalorimeterSD); // set sensitive
+                           ffi_ZDC.ffi_ZDC_HCAL_Logic->SetSensitiveDetector(fCalorimeterSD); // set sensitive
 
     } // end ffi_ZDC
 
